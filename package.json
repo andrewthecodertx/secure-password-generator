@@ -1,6 +1,6 @@
 {
   "name": "@andrewthecoder/secure-password-generator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A secure password generator written in TypeScript",
   "publishConfig": {
     "access": "public"
