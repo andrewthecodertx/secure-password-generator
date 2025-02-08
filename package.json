@@ -1,0 +1,31 @@
+{
+  "name": "@andrewthecoder/secure-password-generator",
+  "version": "0.1.0",
+  "description": "A secure password generator written in TypeScript",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "typescript",
+    "security"
+  ],
+  "author": "Andrew S Erwin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}
