@@ -11,7 +11,7 @@ npm install @andrewthecoder/secure-password-generator
 ## Usage
 
 ```typescript
-import { generate } from 'secure-password-generator';
+import { generate } from '@andrewthecoder/secure-password-generator';
 
 // Generate a password between 8 and 12 characters
 const password = generate(8, 12);
