@@ -1,11 +1,11 @@
-# secure-password-generator-ts
+# Secure Password Generator
 
 A secure password generator written in TypeScript that generates cryptographically strong random passwords.
 
 ## Installation
 
 ```bash
-npm install andrewthecoder/secure-password-generator
+npm install @andrewthecoder/secure-password-generator
 ```
 
 ## Usage
