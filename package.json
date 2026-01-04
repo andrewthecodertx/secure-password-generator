@@ -8,6 +8,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "bin": {
+    "secure-password-generator": "dist/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
