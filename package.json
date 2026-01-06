@@ -1,6 +1,6 @@
 {
   "name": "@andrewthecoder/secure-password-generator",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A secure password generator written in TypeScript",
   "publishConfig": {
     "access": "public"
@@ -12,7 +12,7 @@
     "secure-password-generator": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/cli.js",
     "test": "jest",
     "prepare": "npm run build"
   },
