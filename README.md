@@ -1,11 +1,12 @@
 # Secure Password Generator
 
-A secure password generator written in TypeScript that generates cryptographically strong random passwords.
+A secure password generator written in TypeScript that generates cryptographically
+strong random passwords.
 
 ## Installation
 
 ```bash
-npm install @andrewthecoder/secure-password-generator
+npm install @andrewthecoder/password
 ```
 
 ## CLI Usage
@@ -14,29 +15,29 @@ Generate passwords directly from the command line using npx:
 
 ```bash
 # Generate a password with default length (16-24 characters)
-npx @andrewthecoder/secure-password-generator
+npx @andrewthecoder/password
 
 # Generate a password between 12 and 20 characters
-npx @andrewthecoder/secure-password-generator 12 20
+npx @andrewthecoder/password 12 20
 
 # Generate a password with exact length (32 characters)
-npx @andrewthecoder/secure-password-generator 32 32
+npx @andrewthecoder/password 32 32
 
 # Show help
-npx @andrewthecoder/secure-password-generator --help
+npx @andrewthecoder/password --help
 ```
 
 Or install globally:
 
 ```bash
-npm install -g @andrewthecoder/secure-password-generator
-secure-password-generator 16 24
+npm install -g @andrewthecoder/password
+password 16 24
 ```
 
 ## Library Usage
 
 ```typescript
-import { generate } from '@andrewthecoder/secure-password-generator';
+import { generate } from "@andrewthecoder/password";
 
 // Generate a password between 8 and 12 characters
 const password = generate(8, 12);
