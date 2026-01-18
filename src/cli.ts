@@ -22,7 +22,7 @@ Options:
 Examples:
   npx @andrewthecoder/password
   npx @andrewthecoder/password 12 20
-  secure-password-generator 32 32  # if installed globally`);
+  password 32 32  # if installed globally`);
   process.exit(0);
 }
 

@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
-    "secure-password-generator": "dist/cli.js"
+    "password": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",
