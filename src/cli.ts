@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-import { generate, PasswordGenerationError } from './index.js';
+import { generate, PasswordGenerationError } from "./index.js";
 
 const args = process.argv.slice(2);
 
@@ -8,8 +7,8 @@ let minLength = 16;
 let maxLength = 24;
 
 // Parse arguments
-if (args.includes('--help') || args.includes('-h')) {
-  console.log(`Usage: secure-password-generator [minLength] [maxLength]
+if (args.includes("--help") || args.includes("-h")) {
+  console.log(`Usage: password [minLength] [maxLength]
 
 Generate a cryptographically secure random password.
 
@@ -21,8 +20,8 @@ Options:
   -h, --help   Show this help message
 
 Examples:
-  npx @andrewthecoder/secure-password-generator
-  npx @andrewthecoder/secure-password-generator 12 20
+  npx @andrewthecoder/password
+  npx @andrewthecoder/password 12 20
   secure-password-generator 32 32  # if installed globally`);
   process.exit(0);
 }
@@ -35,7 +34,7 @@ if (args.length >= 2) {
 }
 
 if (isNaN(minLength) || isNaN(maxLength)) {
-  console.error('Error: Arguments must be valid numbers');
+  console.error("Error: Arguments must be valid numbers");
   process.exit(1);
 }
 
@@ -46,7 +45,7 @@ try {
   if (error instanceof PasswordGenerationError) {
     console.error(`Error: ${error.message}`);
   } else {
-    console.error('An unexpected error occurred');
+    console.error("An unexpected error occurred");
   }
   process.exit(1);
 }
